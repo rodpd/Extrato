@@ -21,3 +21,7 @@ Instalar dependencias:
 Se for preciso, mudar port em src/app/config/constants.ts para port em que o backend esta rodando
 
 Iniciar projeto: `ng serve`
+
+<br/>
+
+![preview](https://drive.google.com/uc?id=1fS3u-WEaqrtnKV63Qo585fkwUN48H6BQ)
