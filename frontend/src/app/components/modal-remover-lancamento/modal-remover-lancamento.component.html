@@ -1,0 +1,8 @@
+<mat-dialog-content>
+	<p>Remover {{data.lancamento.descricao}} ?</p>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+	<button mat-button mat-dialog-close>Cancelar</button>
+	<button mat-flat-button color="warn" (click)="cancelarLancamento()" [mat-dialog-close]="true" cdkFocusInitial>Remover</button>
+  </mat-dialog-actions>

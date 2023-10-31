@@ -1,0 +1,23 @@
+
+<form (submit)="addLancamento()">	
+	
+	<mat-dialog-content>
+		<h2>Adicionar lançamento</h2>
+		<mat-form-field>
+			<mat-label>Valor</mat-label>
+			<input matInput [formControl]="valorControl">
+			<mat-error *ngIf="valorControl.invalid">{{getMensagemErroValor()}}</mat-error>
+		</mat-form-field>
+		<mat-form-field>
+			<mat-label>Descrição</mat-label>
+			<textarea rows="3" matInput [formControl]="descricaoControl"></textarea>
+			<mat-error *ngIf="descricaoControl.invalid">{{getMensagemErroDescricao()}}</mat-error>
+		</mat-form-field>
+	</mat-dialog-content>
+	
+	<mat-dialog-actions align="end">
+		<button mat-button mat-dialog-close>Cancelar</button>
+		<button mat-flat-button color="primary" cdkFocusInitial type="submit">Confirmar</button>
+	</mat-dialog-actions>
+
+</form>

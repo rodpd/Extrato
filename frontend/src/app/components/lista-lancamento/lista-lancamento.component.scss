@@ -1,0 +1,90 @@
+tr:nth-child(even) {
+	background-color: rgb(247, 247, 247);
+}
+
+tr[mat-row]:hover {
+	background-color: rgb(235, 235, 235);
+}
+
+tr[mat-footer-row] {
+	font-weight: bold;
+}
+
+td {
+	cursor: default;
+}
+
+.mat-column-avulso {
+	width: 24px;
+	max-width: 32px;
+	padding: 0px 0px 0px 8px;
+}
+
+.mat-column-valor {
+	width: fit-content;
+}
+
+.mat-column-editar {
+	width: 20px;
+}
+
+.mat-column-remover {
+	width: 20px;
+}
+
+.avulso {
+	margin-top: .2rem;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: rgb(160, 160, 255);
+  }
+
+.positivo {
+	color: rgb(0, 158, 0);
+}
+
+.negativo {
+	color: rgb(201, 0, 0);
+}
+
+mat-icon:hover {
+	cursor: pointer;
+}
+
+.icon-edit:hover {
+	color: rgb(70, 70, 255);
+}
+
+.icon-delete:hover {
+	color: rgb(255, 80, 80)
+}
+
+@media only screen and (max-width: 600px) {
+
+	.mat-column-editar {
+		display: none;
+	}
+
+	.mat-column-remover {
+		display: none;
+	}
+
+	.mat-column-menu {
+		width: 24px;
+		max-width: 40px;
+		padding: 0px 8px 0px 0px;
+	}
+
+	.mat-column-valor {
+		padding: 16px 0px 16px 16px;
+	}
+
+}
+
+@media only screen and (min-width: 601px) {
+	.mat-column-menu {
+		display: none;
+	}
+}
